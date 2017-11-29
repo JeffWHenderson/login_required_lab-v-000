@@ -1,6 +1,6 @@
-class SessionController < ApplicationController
+class SessionsController < ApplicationController
 
   def current_user
-    
+
   end
 end
