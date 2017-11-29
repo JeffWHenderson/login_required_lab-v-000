@@ -14,6 +14,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+    raise session[:name].inspect
     session.delete :name
     redirect_to '/'
   end
