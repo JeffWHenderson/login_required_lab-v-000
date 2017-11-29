@@ -7,7 +7,6 @@ LOGIN HERE
 <% end %>
 
 
-<%= form_tag ({controller: 'sessions', action: 'delete', method: 'post'}) do %>
-  <input name=name>
+<%= form_tag ({controller: 'sessions', action: 'destroy', method: 'post'}) do %>
   <input type=submit value='logout'>
 <% end %>
