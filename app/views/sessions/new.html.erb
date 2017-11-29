@@ -1,3 +1,5 @@
+welcome <%= session[:name] %>
+
 LOGIN HERE
 <%= form_tag ({controller: 'sessions', action: 'create', method: 'post'}) do %>
   <input name=name>
