@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    raise current_user.inspect
+    #raise current_user.inspect
     session.delete :name
     redirect_to controller: 'application', action: 'hello'
   end
