@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
 
   def current_user
-    session[:name]
+    session[:current_user]
   end
 end
