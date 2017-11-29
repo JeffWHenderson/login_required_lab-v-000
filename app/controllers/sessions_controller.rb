@@ -3,6 +3,7 @@ class SessionsController < ApplicationController
   end
 
   def create
+    raise params.inspect
     session[:name] = params[:name]
     #puts session[:name]
     if session[:name] == '' || session[:name].nil?
