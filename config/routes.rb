@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  #root '/session/new'
+  root '/session/new'
   resources :secrets, only: :show
   resources :sessions, only: [:new, :create, :destroy]
   # The priority is based upon order of creation: first created -> highest priority.
